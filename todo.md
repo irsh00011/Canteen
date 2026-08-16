@@ -95,3 +95,16 @@
 - [x] Preserve product photo visibility and existing add/plus/minus sound behavior
 - [x] Verify mobile and desktop product cards, run checks, and save a fresh checkpoint
 - [x] Save and verify a fresh checkpoint for the palette and product-card layout update
+- [x] Replace the current purple/yellow palette with Raspberry and Dandelion semantic tokens
+- [x] Preserve readable cream surfaces, dark-red text, and accessible contrast
+- [x] Preserve product-card layout, controls, sounds, billing, QR, reports, and local storage
+- [x] Verify mobile and desktop palette rendering, run checks, and save a fresh checkpoint
+- [x] Scroll the current bill/cart into view after a successful product add
+- [x] Preserve plus/minus sounds and prevent scrolling from firing on unrelated actions
+- [x] Verify the cart reveal on mobile and desktop and save a fresh checkpoint
+- [x] Preserve the Raspberry/Dandelion palette and controls-below-image product-card layout
+- [x] Add smooth cart scroll and fall-down reveal only after a successful product-card add
+- [x] Keep plus/minus, payment, navigation, and other sound boundaries unchanged
+- [x] Verify mobile and desktop animation behavior and save a fresh checkpoint
+- [x] Save a fresh checkpoint containing the Raspberry/Dandelion palette and cart fall-down reveal
+- [x] Verify the preview after that checkpoint contains the updated animated cart behavior
