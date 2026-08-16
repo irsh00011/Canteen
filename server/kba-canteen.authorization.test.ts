@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { aggregateReport, appRouter, buildBillNumber, buildCsv, isActiveBill, priceSnapshot } from "./routers";
 import type { TrpcContext } from "./_core/context";
+import { activeBillsForDate, archiveBillsForDate } from "../shared/localArchive";
 
 function context(role: "user" | "admin"): TrpcContext {
   return {
@@ -45,5 +46,13 @@ describe("KBA Canteen authorization and validation", () => {
   it("excludes soft-archived bills from active reporting", () => {
     expect(isActiveBill(null)).toBe(true);
     expect(isActiveBill(new Date())).toBe(false);
+  });
+
+  it("archives only today's bills and preserves the records", () => {
+    const bills = [{ id: "today", createdAt: "2026-08-16T04:00:00.000Z" }, { id: "old", createdAt: "2026-08-15T04:00:00.000Z" }];
+    const archived = archiveBillsForDate(bills, "20260816", "2026-08-16T05:00:00.000Z", date => date.toISOString().slice(0, 10).replaceAll("-", ""));
+    expect(archived[0]).toMatchObject({ id: "today", archivedAt: "2026-08-16T05:00:00.000Z" });
+    expect(archived[1]).toEqual(bills[1]);
+    expect(activeBillsForDate(archived, "20260816", date => date.toISOString().slice(0, 10).replaceAll("-", ""))).toEqual([]);
   });
 });

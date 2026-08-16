@@ -52,3 +52,10 @@
 - [x] Complete final visual verification and save a checkpoint for the exact simplified version
 - [x] Publish the current direct-billing homepage as a fresh checkpoint so the public domain reflects the restored source
 - [x] Fix the missing Home icon import in the restored direct-billing homepage
+- [x] Add Clear Today action to Daily Reports with confirmation and local archival
+- [x] Leave snack catalogue unchanged for user-managed Add/Edit workflows
+- [x] Test and publish the Clear Today update
+- [x] Publish a fresh checkpoint containing Clear Today and verify the public domain
+- [x] Verify archived bills disappear from active Daily Reports while remaining stored locally
+- [x] Save and verify a fresh public checkpoint for the Clear Today update
+- [x] Add direct test coverage for active-report exclusion after local archival
