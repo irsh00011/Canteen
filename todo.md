@@ -50,3 +50,5 @@
 - [x] Fix edit-item flow so selecting a product opens a working edit form and persists updates
 - [x] Load the playful font direction reliably through the document head or a local fallback asset
 - [x] Complete final visual verification and save a checkpoint for the exact simplified version
+- [x] Publish the current direct-billing homepage as a fresh checkpoint so the public domain reflects the restored source
+- [x] Fix the missing Home icon import in the restored direct-billing homepage
