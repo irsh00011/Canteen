@@ -59,3 +59,8 @@
 - [x] Verify archived bills disappear from active Daily Reports while remaining stored locally
 - [x] Save and verify a fresh public checkpoint for the Clear Today update
 - [x] Add direct test coverage for active-report exclusion after local archival
+- [x] Add Payment QR option to the simplified navigation
+- [x] Add QR image upload, preview, replace, and localStorage save behavior
+- [x] Verify the saved QR appears on the payment screen and publish a checkpoint
+- [x] Save a fresh checkpoint after the Payment QR settings changes
+- [x] Verify replacing the QR in settings is reflected on the next payment screen
