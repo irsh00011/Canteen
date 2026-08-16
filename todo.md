@@ -24,3 +24,15 @@
 - [x] Add direct tests for report aggregation, CSV output, and archive behavior
 - [x] Confirm final generated logo replacement in the rendered preview
 - [x] Add a direct soft-archive active-report exclusion test
+- [x] Write revised local-only kiosk PRD and data model
+- [x] Remove camera and backend database dependencies from the active billing experience
+- [x] Add localStorage persistence for products, bills, settings, and reports
+- [x] Add admin product setup with image upload, price, category, availability, edit, and delete
+- [x] Add plus/minus product cards and current-bill controls
+- [x] Add uploaded Paytm payment QR display in billing and settings
+- [x] Redesign homepage with refined grid navigation and restrained app-like animations
+- [x] Add local daily reports and CSV export
+- [x] Verify mobile and desktop local-only flows and save a new checkpoint
+- [x] Remove or rewrite obsolete Supabase connectivity validation because the active kiosk no longer depends on Supabase
+- [x] Add direct minus/remove control on product cards
+- [x] Save a fresh checkpoint for the localStorage-only redesign
