@@ -67,3 +67,7 @@
 - [x] Add subtle sound feedback for buttons and item taps
 - [x] Add a visible mute/unmute control with local preference persistence
 - [x] Avoid sound feedback for text input and verify the sound-enabled kiosk build
+- [x] Copy and upload the supplied mouse-click MP3 as a web asset
+- [x] Play the MP3 once only after successful item add and successful quantity increase
+- [x] Keep minus, delete, checkout, navigation, search, login, close, and other actions silent
+- [x] Validate subtle 20–30% volume, duplicate prevention, and desktop/mobile compatibility
