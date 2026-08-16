@@ -80,3 +80,13 @@
 - [x] Route product-card plus through tap-notification instead of item-add mouse-click
 - [x] Play quantity sounds only when the bill quantity actually changes
 - [x] Manually verify all three sound mappings and save a fresh checkpoint
+- [x] Create a UI/UX Pro Max design-system plan for KBA Canteen
+- [x] Refine typography and font hierarchy without changing core kiosk behavior
+- [x] Refine the luxury-purple palette into accessible semantic design tokens
+- [x] Improve billing layout, spacing, touch targets, focus states, and responsive behavior
+- [x] Improve motion and feedback while preserving the exact three-sound action mapping
+- [x] Verify UI and functionality, then save a fresh enhancement checkpoint
+- [x] Prevent the fixed bottom navigation from obscuring the current bill on small screens
+- [x] Re-verify the enhanced layout after the mobile overlap fix
+- [x] Save and verify a fresh checkpoint for the UI/UX enhancement version
+- [x] Verify the UI/UX-enhanced preview after the fresh checkpoint is saved
