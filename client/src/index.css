@@ -405,3 +405,111 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
   .simple-main { padding-bottom: 190px !important; }
   .current-bill { scroll-margin-bottom: 150px; }
 }
+
+
+/* Supplied palette + unobstructed product-card controls */
+:root {
+  --primary: #642c8c;
+  --primary-foreground: #fffaf0;
+  --sidebar-primary: #642c8c;
+  --sidebar-primary-foreground: #fffaf0;
+  --background: #fff8e7;
+  --foreground: #3a2144;
+  --card: #fffdf6;
+  --card-foreground: #3a2144;
+  --popover: #fffdf6;
+  --popover-foreground: #3a2144;
+  --secondary: #f2c983;
+  --secondary-foreground: #3a2144;
+  --muted: #fff0bd;
+  --muted-foreground: #725d70;
+  --accent: #fadd56;
+  --accent-foreground: #3a2144;
+  --destructive: #b6475b;
+  --destructive-foreground: #fffaf0;
+  --border: #ead29b;
+  --input: #ead29b;
+  --ring: #642c8c;
+  --kba-canvas: #fff8e7;
+  --kba-surface: rgba(255, 253, 246, 0.9);
+  --kba-lilac: #f2c983;
+  --kba-violet: #642c8c;
+  --kba-plum: #3a2144;
+  --kba-plum-soft: #725d70;
+  --kba-border: rgba(100, 44, 140, 0.18);
+}
+
+.simple-app {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(250, 221, 86, 0.3), transparent 30%),
+    radial-gradient(circle at 94% 16%, rgba(242, 201, 131, 0.34), transparent 31%),
+    var(--kba-canvas);
+}
+.simple-header { background: rgba(255, 248, 231, 0.88) !important; }
+.local-status { border-color: rgba(47, 125, 92, 0.24); }
+.eyebrow { color: #642c8c !important; }
+.today-chip { background: #642c8c !important; }
+.category-row button.selected { background: #642c8c !important; border-color: #642c8c !important; }
+.category-row button:hover { border-color: #642c8c !important; }
+.simple-search { background: rgba(255, 253, 246, 0.92) !important; border-color: rgba(100,44,140,.2) !important; }
+.simple-search:focus-within { border-color: #642c8c !important; box-shadow: 0 0 0 4px rgba(100,44,140,.16), var(--kba-shadow-sm); }
+.simple-product { background: rgba(255,253,246,.92) !important; border-color: rgba(100,44,140,.16) !important; }
+.simple-product:hover { border-color: rgba(100,44,140,.5) !important; }
+.simple-product-hit {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 6px !important;
+  min-height: 0 !important;
+  padding: 12px !important;
+  background: #fffdf6 !important;
+  color: #3a2144 !important;
+  text-align: left !important;
+}
+.simple-product-hit > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.5 / 1;
+  object-fit: contain;
+  background: #f2c983;
+  border-radius: 14px;
+  margin-bottom: 4px;
+}
+.product-letter {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1.5 / 1;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f2c983, #fadd56);
+  color: #642c8c !important;
+  font-size: 2.8rem;
+}
+.simple-product-hit b { color: #3a2144; font-size: 1rem; }
+.simple-product-hit small { color: #725d70; }
+.simple-product strong { color: #642c8c !important; }
+.card-stepper {
+  position: static !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  width: 100%;
+  padding: 10px 12px 12px !important;
+  border-top: 1px solid rgba(100,44,140,.12);
+  background: #fffdf6;
+}
+.card-stepper button { background: #f2c983 !important; color: #3a2144 !important; }
+.card-stepper button:last-child { background: #642c8c !important; color: #fffaf0 !important; }
+.current-bill, .payment-card, .qr-settings-card, .item-form, .report-cards, .report-list, .edit-list { background: rgba(255,253,246,.9) !important; border-color: rgba(100,44,140,.18) !important; }
+.current-bill { box-shadow: 0 14px 34px rgba(100,44,140,.12) !important; }
+.next-button, .report-download { background: #642c8c !important; }
+.next-button:hover, .report-download:hover { background: #51206f !important; }
+.bottom-menu { background: rgba(100,44,140,.95) !important; }
+.bottom-menu button.active { background: #fadd56 !important; color: #3a2144 !important; box-shadow: 0 6px 16px rgba(250,221,86,.3); }
+.simple-notice { background: rgba(250, 245, 214, .96) !important; color: #5e4d26 !important; border-color: rgba(242,201,131,.7) !important; }
+.clear-today { color: #9d3850 !important; background: rgba(182,71,91,.08) !important; }
+
+@media (max-width: 640px) {
+  .simple-product-hit > img, .product-letter { aspect-ratio: 1.35 / 1; }
+  .simple-product-hit { padding: 10px !important; }
+  .card-stepper { padding: 8px 10px 10px !important; }
+}

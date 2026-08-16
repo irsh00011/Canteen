@@ -90,3 +90,8 @@
 - [x] Re-verify the enhanced layout after the mobile overlap fix
 - [x] Save and verify a fresh checkpoint for the UI/UX enhancement version
 - [x] Verify the UI/UX-enhanced preview after the fresh checkpoint is saved
+- [x] Move product-card plus/minus controls into a separate control row below the product image and rate
+- [x] Apply supplied palette tokens: #642C8C, #FADD56, and #F2C983
+- [x] Preserve product photo visibility and existing add/plus/minus sound behavior
+- [x] Verify mobile and desktop product cards, run checks, and save a fresh checkpoint
+- [x] Save and verify a fresh checkpoint for the palette and product-card layout update
