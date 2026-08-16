@@ -71,3 +71,12 @@
 - [x] Play the MP3 once only after successful item add and successful quantity increase
 - [x] Keep minus, delete, checkout, navigation, search, login, close, and other actions silent
 - [x] Validate subtle 20–30% volume, duplicate prevention, and desktop/mobile compatibility
+- [x] Upload cash-register and tap-notification MP3 assets
+- [x] Keep mouse-click sound only for successful item additions
+- [x] Use tap-notification sound for successful plus and minus quantity changes
+- [x] Use cash-register sound once for Complete Payment
+- [x] Keep delete, clear, checkout navigation, search, navigation, QR, and other actions silent
+- [x] Validate the three-sound mapping and publish a fresh checkpoint
+- [x] Route product-card plus through tap-notification instead of item-add mouse-click
+- [x] Play quantity sounds only when the bill quantity actually changes
+- [x] Manually verify all three sound mappings and save a fresh checkpoint
