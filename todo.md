@@ -108,3 +108,15 @@
 - [x] Verify mobile and desktop animation behavior and save a fresh checkpoint
 - [x] Save a fresh checkpoint containing the Raspberry/Dandelion palette and cart fall-down reveal
 - [x] Verify the preview after that checkpoint contains the updated animated cart behavior
+- [x] Keep the dashboard stable when a product is selected
+- [x] Animate only a lightweight product copy from its card into the current bill
+- [x] Preserve add, plus/minus, payment, navigation, and sound behavior
+- [x] Verify the stable product fly-to-cart behavior on mobile and desktop
+- [x] Make the product fly land on a visible stable cart target when the current bill is below the viewport
+- [x] Add direct test coverage for the product fly destination calculation
+- [x] Verify the product-only fly animation on desktop and mobile before checkpointing
+- [x] Add a visible fixed cart anchor for product flights when the current bill is offscreen
+- [x] Route product flights to the visible cart anchor instead of a generic viewport position
+- [x] Verify the stable dashboard product flight against the visible cart anchor before checkpointing
+- [x] Align the product-flight destination calculation with the actual fixed cart-anchor position
+- [x] Re-verify fixed-anchor routing on mobile and desktop before checkpointing
