@@ -1,0 +1,26 @@
+# Project TODO
+
+- [x] Configure the supplied Supabase project URL and required server credentials
+- [x] Enhance and store the KBA Canteen logo for consistent application branding
+- [x] Apply the fixed luxury purple palette (#FBF1FF, #E3D0EA, #9B71B2, #3A1C36)
+- [x] Add database schema for products, bills, bill items, and archived sales
+- [x] Add role-aware authentication for Admin and Cashier access
+- [x] Build the mobile-first billing screen with live totals and quantity controls
+- [x] Add camera QR/barcode scanning with manual product search fallback
+- [x] Implement bill completion with KBA-YYYYMMDD-NNN numbering and price snapshots
+- [x] Build admin product management with QR generation and download
+- [x] Build today's sales dashboard with Asia/Kolkata date handling
+- [x] Add server-side CSV export for today's sales
+- [x] Add protected soft-archive flow for clearing today's sales
+- [x] Write Vitest coverage for billing, numbering, price snapshots, authorization, and reports
+- [x] Run type checks, tests, and responsive visual verification
+- [x] Enforce Admin versus Cashier permissions on reports, CSV, archive, and product operations
+- [x] Make daily bill numbering safe under concurrent checkout requests
+- [x] Add a product disable/status control that persists the selected status
+- [x] Add Vitest coverage for billing, numbering, price snapshots, authorization, reports, CSV, and archive behavior
+- [x] Capture and review a mobile viewport screenshot
+- [x] Verify the enhanced logo asset has completed and is rendered without a generation placeholder
+- [x] Preserve product status when editing and exclude disabled products from cashier flows
+- [x] Add direct tests for report aggregation, CSV output, and archive behavior
+- [x] Confirm final generated logo replacement in the rendered preview
+- [x] Add a direct soft-archive active-report exclusion test

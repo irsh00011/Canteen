@@ -1,4 +1,4 @@
-import { int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
+import { decimal, int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
 
 /**
  * Core user table backing auth flow.
@@ -25,4 +25,41 @@ export const users = mysqlTable("users", {
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
 
-// TODO: Add your tables here
+export const products = mysqlTable("products", {
+  id: int("id").autoincrement().primaryKey(),
+  productCode: varchar("productCode", { length: 64 }).notNull().unique(),
+  name: varchar("name", { length: 160 }).notNull(),
+  category: varchar("category", { length: 100 }).notNull(),
+  price: decimal("price", { precision: 10, scale: 2 }).notNull(),
+  status: mysqlEnum("status", ["active", "disabled"]).default("active").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export const billSequences = mysqlTable("billSequences", {
+  dateKey: varchar("dateKey", { length: 8 }).primaryKey(),
+  nextNumber: int("nextNumber").notNull().default(1),
+});
+
+export const bills = mysqlTable("bills", {
+  id: int("id").autoincrement().primaryKey(),
+  billNumber: varchar("billNumber", { length: 32 }).notNull().unique(),
+  totalAmount: decimal("totalAmount", { precision: 10, scale: 2 }).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  archivedAt: timestamp("archivedAt"),
+});
+
+export const billItems = mysqlTable("billItems", {
+  id: int("id").autoincrement().primaryKey(),
+  billId: int("billId").notNull(),
+  productId: int("productId").notNull(),
+  productName: varchar("productName", { length: 160 }).notNull(),
+  quantity: int("quantity").notNull(),
+  unitPrice: decimal("unitPrice", { precision: 10, scale: 2 }).notNull(),
+  totalPrice: decimal("totalPrice", { precision: 10, scale: 2 }).notNull(),
+});
+
+export type Product = typeof products.$inferSelect;
+export type BillSequence = typeof billSequences.$inferSelect;
+export type Bill = typeof bills.$inferSelect;
+export type BillItem = typeof billItems.$inferSelect;

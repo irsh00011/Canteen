@@ -1,5 +1,27 @@
 {
   "version": "7",
   "dialect": "mysql",
-  "entries": []
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1786872328659,
+      "tag": "0000_wet_toad_men",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1786873070285,
+      "tag": "0001_reflective_bloodscream",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1786873406094,
+      "tag": "0002_marvelous_the_call",
+      "breakpoints": true
+    }
+  ]
 }
