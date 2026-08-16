@@ -64,3 +64,6 @@
 - [x] Verify the saved QR appears on the payment screen and publish a checkpoint
 - [x] Save a fresh checkpoint after the Payment QR settings changes
 - [x] Verify replacing the QR in settings is reflected on the next payment screen
+- [x] Add subtle sound feedback for buttons and item taps
+- [x] Add a visible mute/unmute control with local preference persistence
+- [x] Avoid sound feedback for text input and verify the sound-enabled kiosk build
