@@ -122,5 +122,5 @@
 - [x] Re-verify fixed-anchor routing on mobile and desktop before checkpointing
 - [x] Verify that the public KBA Canteen domain serves the latest saved checkpoint
 - [x] Provide the user with the confirmed latest access link
-- [ ] Export the latest KBA Canteen source files to the user-provided GitHub repository
-- [ ] Confirm the pushed GitHub commit and branch
+- [x] Export the latest KBA Canteen source files to the user-provided GitHub repository
+- [x] Confirm the pushed GitHub commit and branch
