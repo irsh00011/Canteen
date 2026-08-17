@@ -120,3 +120,7 @@
 - [x] Verify the stable dashboard product flight against the visible cart anchor before checkpointing
 - [x] Align the product-flight destination calculation with the actual fixed cart-anchor position
 - [x] Re-verify fixed-anchor routing on mobile and desktop before checkpointing
+- [x] Verify that the public KBA Canteen domain serves the latest saved checkpoint
+- [x] Provide the user with the confirmed latest access link
+- [ ] Export the latest KBA Canteen source files to the user-provided GitHub repository
+- [ ] Confirm the pushed GitHub commit and branch
